@@ -1,0 +1,155 @@
+/* CSS declarations go here */
+html {   
+    height: 100%;
+}
+
+body {
+/*  padding-top: 50px;*/
+    height: 100%;
+    padding: 0;
+    
+    background-color: #999999;
+    background-image: url(http://www.transparenttextures.com/patterns/fabric-of-squares.png);
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    
+}
+.starter-template {
+  text-align: center;
+}
+
+#a {
+    height: 100%;
+    width:100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#b {
+    height: 100%;
+}
+
+#boxdiv {
+    display: block;
+    position:absolute;
+    height:auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top: 40px;
+/*    z-index: -1;*/
+}
+
+#box {
+    height: 100%;
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    border: none;
+    overflow: auto;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0);
+    max-width: 992px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    min-height: 400px;
+    resize: none;
+    outline: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+/*
+    display: block;
+    position:absolute;
+    height:auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top: 40px;
+*/
+}
+
+#jotttitle {
+    font-size: 24px;
+    float: left;
+    width: 50%;
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+    background-color: black;
+    color: white;
+    border-left: 10px;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+}
+
+#login {
+    width: 50%;
+    float: right;
+    padding: 10px 0px 10px 0px;
+    text-align: right;
+    background-color: black;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.50);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.50);
+}
+
+#login-buttons a{
+    color: white;
+    margin-right: 10px;
+}
+
+#jottspan {
+    margin-left: 10px;
+}
+
+#login-dropdown-list {
+    left: -190px;
+}
+
+#login-dropdown-list a{
+    color: #596595;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.hiddendiv {
+    display: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
+}
+
+.lbr {
+    line-height: 3px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media(min-width:768px){
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media(min-width:992px){
+    #box {
+        margin-top: 50px;
+        -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.50);
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.50);
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        max-height: 500px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media(min-width:1200px){
+    #box {
+        
+    }
+}

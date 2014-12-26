@@ -1,0 +1,25 @@
+<head>
+    <title>Jott</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="a" class="container">
+        <div id="b" class="starter-template">
+            <div id="header">
+                <div id="jotttitle"><span id="jottspan">Jott</span></div>
+                <div id="login">{{> loginButtons}}</div>
+            </div>
+            <br/>{{> hello}}
+        </div>
+    </div>
+</body>
+
+<template name="hello">
+    {{#if currentUser}}
+        <div id="boxdiv">
+            <textarea id="box">{{user.text}}</textarea>
+        </div>
+
+    {{/if}}
+</template>
