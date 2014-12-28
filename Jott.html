@@ -10,12 +10,17 @@
                 <div id="jotttitle"><span id="jottspan">Jott</span></div>
                 <div id="login">{{> loginButtons}}</div>
             </div>
-            <br/>{{> hello}}
+            <br/>{{> textGoesHere}}
         </div>
     </div>
+    <script>
+    $('html').bind('paste', function(e) {
+        Meteor.call('click', document.getElementById("box").value);
+    });
+    </script>
 </body>
 
-<template name="hello">
+<template name="textGoesHere">
     {{#if currentUser}}
         <div id="boxdiv">
             <textarea id="box">{{user.text}}</textarea>
