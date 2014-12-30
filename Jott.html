@@ -24,9 +24,20 @@
 
 <template name="textGoesHere">
     {{#if currentUser}}
-        <div id="boxdiv">
-            <textarea id="box">{{user.text}}</textarea>
+        <div class="boxdiv">
+            <textarea id="thebox" class="box">{{user.text}}</textarea>
         </div>
-
+    {{else}}
+        <div class="boxdiv">
+            <div id="welcome" class="box"><h1>Welcome to Jott!</h1><br/><h3>What is Jott?</h3>
+            A lightweight, mobile friendly note taking service geared towards copying and pasting between devices.
+            <br/><br/><h3>How do I use Jott?</h3>
+            Simply Sign In in the top right. Then start typing! You can Sign In on all of your devices! It's all synced!
+            <br/><br/><h3>Why Jott?</h3>
+            Simple and lightweight. Jott was made for the simple task of copy and pasting some text between devices! It's easy!
+            <br/><br/><h3>Who made Jott?</h3>
+            Jott was developed by <a href="http://www.tylerleonhardt.com">Tyler Leonhardt</a> using the <a href="https://www.meteor.com/">Meteor</a> Platform!
+            </div>
+        </div>
     {{/if}}
 </template>

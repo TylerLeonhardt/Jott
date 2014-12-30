@@ -14,8 +14,8 @@ if (Meteor.isClient) {
     });
 
     Template.textGoesHere.events({
-        'input #box': function (e) {
-            Meteor.call('click', $("#box").val());
+        'input #thebox': function (e) {
+            Meteor.call('click', $("#thebox").val());
         }
     });
 
