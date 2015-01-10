@@ -97,6 +97,7 @@ body {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.50);
     font-family: trench;
     font-size: 12pt;
+    color: white;
 }
 
 #login-buttons a{
